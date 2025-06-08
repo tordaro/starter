@@ -1,10 +1,11 @@
 -- load defaults i.e lua_lsp
 require("nvchad.configs.lspconfig").defaults()
+require("lspconfig").rust_analyzer.setup({})
 
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls" , "pyright" }
+local servers = { "html", "cssls", "pyright" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
