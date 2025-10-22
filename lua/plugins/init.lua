@@ -5,7 +5,6 @@ return {
     opts = require "configs.conform",
   },
 
-  -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -43,4 +42,12 @@ return {
   -- 		},
   -- 	},
   -- },
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = {
+      view = {
+        width = 50,
+      },
+    },
+  },
 }
